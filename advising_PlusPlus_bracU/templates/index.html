@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> Advising++ </title>
+</head>
+
+<body>
+    <h1> Advising++ </h1>
+    <p> Welcome to Advising++! </p>
+    <div>
+        <form action = "" method="POST">
+            {% csrf_token %}
+            <input type="text" name="course" placeholder="Example: CSE123" required maxlength="6">
+            <input type="text" name = "sec" placeholder="Example: 01 - 99" maxlength="2">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+</html>
